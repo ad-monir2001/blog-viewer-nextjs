@@ -7,8 +7,8 @@ export default async function Header() {
   const authenticated = await isAuthenticated();
 
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <nav className="container mx-auto flex justify-between items-center">
+    <header className="bg-gradient-to-r from-gray-800 to-gray-900 text-white shadow-lg">
+      <nav className="container mx-auto flex flex-col md:flex-row justify-between items-center p-4 space-y-4 md:space-y-0">
         <div className="space-x-4">
           <Link href="/" className="hover:text-gray-300">Home</Link>
           {authenticated && (
